@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="Maciej 'barszcz' Marczewski, www.barszcz.info" />
+
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		
+		<script type="text/javascript" src="../canvas-helpers.js"></script>
+		<script type="text/javascript" src="../brscDotDisplay.js"></script>
+		<script type="text/javascript" src="../brscDotDisplay.keyboard.js"></script>
+		<script type="text/javascript" src="../brscDotDisplay.mouse.js"></script>
+		<script type="text/javascript" src="../brscDotDisplay.text.js"></script>
+
+		<title>Brsc Dot Display</title>
+	</head>
+	<body>
+	
+		<div id="dotdisplay">
+		</div>
+		
+		<script type="text/javascript">
+			var dotDisplay = new brscDotDisplay(document.getElementById('dotdisplay'), 10, 50, 15, 15, 2, '#ddd', 5, 15);
+			dotDisplay.drawBg();
+			dotDisplay.scrollTextIn("abc def", "tpf", "#000", 50, "left");
+		</script>
+		
+	</body>
+</html>
+
